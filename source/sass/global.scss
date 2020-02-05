@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  font-family: $ProximaNova;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $font-size-default;
+  line-height: $line-height;
+  color: $main-color;
+
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

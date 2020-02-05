@@ -1,0 +1,75 @@
+.product {
+  position: relative;
+  background: radial-gradient(85.65% 85.65% at 50% 50%, rgba(190, 71, 33, 0) 35.94%, rgba(190, 71, 33, 0.15) 85.42%), #FCF6EC;
+}
+
+.product__img {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+
+.product__img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 480px;
+  height: 480px;
+  border: 1px solid $orange;
+  border-radius: 50%;
+
+  @media (max-width: $dextop-width) {
+    width: 27%;
+    height: 85%;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.product__img::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 550px;
+  height: 550px;
+  border: 1px solid $orange;
+  border-radius: 50%;
+
+  @media (max-width: $dextop-width) {
+    width: 25%;
+    height: 80%;
+  }
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.product__img img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin: 0 auto;
+
+  @media (max-width: $dextop-width) {
+    width: 30%;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 50%;
+    filter: opacity(0.2);
+  }
+}
+
+.product__advantages {
+  margin: 0;
+}
